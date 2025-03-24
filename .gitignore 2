@@ -2,7 +2,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
 .Python
 build/
 develop-eggs/
@@ -20,12 +19,11 @@ wheels/
 .installed.cfg
 *.egg
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
 # Virtual Environment
-venv/
+.env
+.venv
 env/
+venv/
 ENV/
 
 # IDE
@@ -34,9 +32,23 @@ ENV/
 *.swp
 *.swo
 
-# Project specific
-experiments/
-data/
+# Data files
+*.csv
+*.dat
+*.pkl
+*.h5
+*.hdf5
+*.npy
+*.npz
+
+# Logs
 *.log
-*.json
-!example_results.json 
+logs/
+tensorboard/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Mac
+.DS_Store 
